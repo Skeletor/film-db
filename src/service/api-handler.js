@@ -1,10 +1,11 @@
 
 export default class ApiHandler {
+
     static _options = {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YTE3MGE2YmI4ZTRmMDdlNGRjZmJlMTU5NGJjYmY3ZSIsIm5iZiI6MTcyMDM1OTkwNS40MDg1MjMsInN1YiI6IjY1ZTVjNDE5OTQ1MWU3MDE0YTU5ZjM0NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Fh3gGKSty006bpW402kqWlUayYr6Q8TQTAA1udfLqfI'
+          Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`
         }
     }
 
